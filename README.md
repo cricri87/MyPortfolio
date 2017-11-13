@@ -10,13 +10,12 @@
 - Drag and drop interface
 
 ### Code Example
-
-'''ruby
+’’’ruby
 def my_great_method
 puts "here it is"
 end
-'''
+’’’
 
-'''javascript
+’’’javascript
 alert('Hi there');
-'''
+’’’
