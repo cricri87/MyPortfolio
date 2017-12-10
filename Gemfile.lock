@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/cricri87/rognstad_view_tool
+  revision: c7e0b0aae5517c443917b716232fbbe8987d7456
+  specs:
+    rognstad_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -202,6 +208,7 @@ DEPENDENCIES
   pry-byebug
   puma (~> 3.7)
   rails (~> 5.1.4)
+  rognstad_view_tool!
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
