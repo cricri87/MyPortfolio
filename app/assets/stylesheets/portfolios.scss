@@ -68,7 +68,7 @@ footer p {
    background-color: black;
  }
 
- .navbar-brand {
+ .navbar-brand, .navbar-brand:hover {
    color: white;
  }
 
@@ -77,6 +77,10 @@ footer p {
    color: white;
    border: 1px double silver;
 
+ }
+
+ .navbar-toggler:hover {
+   background-color: #323232;
  }
 
  #navbarHeader {
