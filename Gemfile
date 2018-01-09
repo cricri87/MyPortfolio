@@ -39,7 +39,10 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-byebug'
+<<<<<<< HEAD
   gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+=======
+>>>>>>> 750db8ca1b95dfb5a3e5d1378a70126b4a759246
 end
 
 group :development do
@@ -66,3 +69,7 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'carrierwave', '~> 1.2', '>= 1.2.1'
 gem 'mini_magick', '~> 4.8'
 gem 'carrierwave-aws', '~> 1.3'
+<<<<<<< HEAD
+=======
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+>>>>>>> 750db8ca1b95dfb5a3e5d1378a70126b4a759246

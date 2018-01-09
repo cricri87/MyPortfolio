@@ -22,7 +22,10 @@ i dont want to show my secrets
 i dont want to show my database
 /config/database.yml
 
+<<<<<<< HEAD
 .env
 
+=======
+>>>>>>> 750db8ca1b95dfb5a3e5d1378a70126b4a759246
 
 .byebug_history
