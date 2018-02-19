@@ -9,7 +9,7 @@ class BlogsController < ApplicationController
     if logged_in?(:site_admin)
       @blogs = Blog.recent.page(params[:page]).per(5)
     else
-      @blogs = Blog.recent.published.page(params[:page]).per(5)
+      @blogs = Blog.published.recent.page(params[:page]).per(5)
     end
       @page_title = "My Portfolio Blog"
   end
@@ -25,7 +25,7 @@ class BlogsController < ApplicationController
       @seo_keywords = @blog.body
     else
       redirect_to blogs_path, notice: "You are not authorized to access this page"
-    end 
+    end
   end
 
   # GET /blogs/new
@@ -92,6 +92,6 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body)
+      params.require(:blog).permit(:title, :body, :topic_id)
     end
 end
