@@ -1,3 +1,22 @@
+User.create!(
+  email: "test@test.com",
+  password: "asdfasdf",
+  password_confirmation: "asdfasdf",
+  name: "Admin User",
+  roles: "site_admin"
+)
+
+puts "1 Admin user created"
+
+User.create!(
+  email: "test2@test.com",
+  password: "asdfasdf",
+  password_confirmation: "asdfasdf",
+  name: "Regular User"
+)
+
+puts "1 Regular user created"
+
 3.times do |topic|
   Topic.create!(
   title: "Topic #{topic}"
@@ -49,22 +68,7 @@ puts "5 skills created"
 
 end
 
-8.times do |portfolio_item|
-  Portfolio.create!(
-    title: "Portfolio title: #{portfolio_item}",
-    subtitle: "Angular",
-    body: "Dreamcatcher pickled marfa ennui tofu craft beer. Iceland umami tumeric,
-     YOLO 3 wolf moon vape raclette chartreuse raw denim keffiyeh biodiesel forage
-     pitchfork pok pok. Shaman banh mi next level enamel pin, 3 wolf moon kale chips
-     portland meh vinyl kickstarter tbh VHS pork belly. PBR&B 3 wolf moon farm-to-table meh,
-     trust fund salvia skateboard paleo fashion axe. Scenester ramps fam normcore leggings marfa vinyl.
-     Slow-carb green juice stumptown, typewriter tumeric hella gochujang ramps small batch swag ethical fam.
-     Flexitarian fixie brooklyn af woke humblebrag mumblecore raclette synth skateboard. ",
-    main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/350x200"
-  )
 
-end
 
 puts "9 portfolio items created"
 

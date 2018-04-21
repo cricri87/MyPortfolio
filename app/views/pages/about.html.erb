@@ -1,23 +1,82 @@
-<h1>About Me</h1>
+<div class="app-card-container">
+  <div class="card">
 
-<hr>
+    <h1>About Me</h1>
 
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "pexels-photo-699122.jpeg", width: 250, alt: "Profile image" %>
-  </div>
+    <hr>
 
-  <div class="col-md-8">
-    <p>
-      Hi, i am 30 years old and i am new to programming. I am trying to land my first developer job.
-      I am self thought and with the help of udemy i have started to learn ruby on rails from home between my job. I have done numerous projects
-      as this website.
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "pexels-photo-699122.jpeg", width: 250, alt: "Profile image", class: 'profile-img' %>
 
-    <p>
-    For the last 13 years i have been a chef, but now i have desided to change my life for the better and change my carrer.
-    I started 1 year a go to find something i liked, and i just fell in love in coding.I tried a few different languages
-    but i found Ruby as a good language and i stuck with Ruby. I know i dont have any real work experience yet, but i am
-    very motivated and a fast learner.
-    </p>
+        <div class="skills">
+          <% @skills.each do |skill| %>
+          <div class="skill">
+            <h4><%=skill.title %></h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-warning"
+              role="progressbar"
+              aria-valuenow="<%= skill.percent_utilized %>"
+              aria-valuemax="100"
+              style="width: <%= skill.percent_utilized %>%"
+            ></div>
+           </div>
+         </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <p>
+          Hi, i am 30 years old and i am new to programming. I am trying to land my first developer job.
+          I am self thought and with the help of udemy i have started to learn ruby on rails from home between my job. I have done numerous projects
+          as this website.
+
+        <p>
+        For the last 13 years i have been a chef, but now i have desided to change my life for the better and change my carrer.
+        I started 1 year a go to find something i liked, and i just fell in love in coding.I tried a few different languages
+        but i found Ruby as a good language and i stuck with Ruby. I know i dont have any real work experience yet, but i am
+        very motivated and a fast learner.
+        </p>
+
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            job History
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+            <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+             Looking for my first job
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+             Current student at Le Wagon marsailles.
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
