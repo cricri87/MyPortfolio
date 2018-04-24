@@ -10,7 +10,7 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
-require "dotenv-rails"
+
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
@@ -22,6 +22,7 @@ module MyPortfolio
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
     config.eager_load_paths << "#{Rails.root}/lib"
+    config.secret_key_base = ENV["SECRET_KEY_BASE"]
 
 
     config.generators.system_tests = nil

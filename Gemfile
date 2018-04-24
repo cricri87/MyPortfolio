@@ -17,7 +17,8 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-byebug'
-  gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+
+
 end
 
 group :development do
@@ -42,6 +43,7 @@ gem 'carrierwave', '~> 1.2', '>= 1.2.1'
 gem 'mini_magick', '~> 4.8'
 gem 'carrierwave-aws', '~> 1.3'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
+gem 'dotenv-rails', '~> 2.4', :github => "bkeepers/dotenv"
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.2'
 gem 'redis', '~> 4.0', '>= 4.0.1'

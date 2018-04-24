@@ -1,4 +1,13 @@
 GIT
+  remote: https://github.com/bkeepers/dotenv.git
+  revision: 089e9bd9a7b4ad3dc99c4fae0f594219587d77f2
+  specs:
+    dotenv (2.4.0)
+    dotenv-rails (2.4.0)
+      dotenv (= 2.4.0)
+      railties (>= 3.2, < 6.0)
+
+GIT
   remote: https://github.com/cricri87/christian_view_tool
   revision: 5c96b67e5142fcc6ee1c1cc0b5ca032ecc23e600
   specs:
@@ -97,10 +106,6 @@ GEM
       warden (~> 1.2.3)
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
-    dotenv (2.2.1)
-    dotenv-rails (2.2.1)
-      dotenv (= 2.2.1)
-      railties (>= 3.2, < 5.2)
     equalizer (0.0.11)
     erubi (1.7.0)
     execjs (2.7.0)
@@ -291,7 +296,7 @@ DEPENDENCIES
   coderay (~> 1.1, >= 1.1.2)
   coffee-rails (~> 4.2)
   devise (~> 4.3)
-  dotenv-rails (~> 2.2, >= 2.2.1)
+  dotenv-rails (~> 2.4)!
   font-awesome-rails (~> 4.7, >= 4.7.0.2)
   friendly_id (~> 5.1.0)
   gritter (~> 1.2)
@@ -321,4 +326,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.16.0.pre.2
+   1.16.1
